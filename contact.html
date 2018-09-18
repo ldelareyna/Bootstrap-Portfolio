@@ -1,0 +1,125 @@
+<!-- Demo Layout for Bootstrap (with cards) -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+
+    <!-- We need to bring in the bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://banner2.kisspng.com/20180130/ylq/kisspng-stock-photography-cartoon-drawing-environmentally-friendly-letter-l-5a70b4cbaed519.0159325015173357557161.jpg"
+                    width="30" height="30" class="d-inline-block align-top" alt=""> Loren Dela Reyna
+            </a>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">LOREN</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <!--Main Row-->
+        <div class="row">
+            <!-- BIG Col 1-->
+            <div class="col-md-6">
+                <!-- CONTACT ME ROW-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Contact Me</h1>
+                        <hr>
+                    </div>
+                </div>
+                <!--THE STUFF-->
+                <form id="contact-form">
+                    <div class="form-row">
+
+                        <div class="col">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
+
+                        </div>
+                        <div class="col">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name" required>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <br>Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Country</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">Canada</option>
+                            <option value="2">United States</option>
+                            <option value="3">International</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell me about your project here..." required
+                            rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-grey my-1">Submit</button>
+                </form>
+                <br>
+            </div>
+
+            <!--BIG Col 2-->
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">What I'm Up Too</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Keep Up With My Work</h6>
+                        <p class="card-text">Find out what project's I'm working on and what I've already done.</p>
+                        <a href="#" class="card-link">
+                            <img src="Assets/images/github.png" class="img-fluid " width="30" height="30" alt="GitHub">
+                        </a>
+                        <a href="#" class="card-link">
+                            <img src="Assets/images/github.png" class="img-fluid " width="30" height="30" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <p class="text-muted text-muted-footer text-center">
+            Copyright 2018 &copy;
+        </p>
+    </footer>
+
+</body>
+
+</html>
